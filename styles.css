@@ -1,0 +1,53 @@
+:root{
+    --grid-size:16;
+    --margin:1px;
+}
+
+* {
+  box-sizing: border-box;
+  background-color:rgb(18, 35, 46);
+  color:#aec6dd;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight:bold;
+  margin:10px auto;
+  text-align:center;
+  font-size:20px;
+}
+
+h1{
+  font-size:40px;
+}
+
+#dim{
+    width:300px;
+    height:80px;
+    margin:20px auto;
+    text-align:center;
+    font-size:30px;
+    padding:10px;
+    border:2px solid #4e5a66;
+    border-radius: 50%;
+}
+
+#dim:hover{
+    color: rgb(18, 35, 0);
+    background-color: #d9dee3;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(700px);
+  height: calc(700px);
+  margin: auto;
+  border: 1px solid black;
+}
+
+.square {
+  width: calc((100% / var(--grid-size)) - 2*var(--margin));
+  height: calc((100% / var(--grid-size)) - 2*var(--margin));
+  border: 1px solid #4e5a66;
+  margin: var(--margin);
+  box-sizing: border-box;
+}
+
